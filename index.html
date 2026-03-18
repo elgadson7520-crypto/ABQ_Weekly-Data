@@ -707,7 +707,7 @@ function togglePause(){isPaused=!isPaused;document.getElementById('pauseBtn').in
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextSlide();else if(e.key==='ArrowLeft')prevSlide();else if(e.key===' '){e.preventDefault();togglePause();}});
 
 /* ═══ AUTO INIT — HARDCODED FOR ABQ TV ═══ */
-const HARDCODED_GS_URL = ''; // Set ABQ Google Sheets publish URL here
+const HARDCODED_GS_URL = 'https://docs.google.com/spreadsheets/d/1P8f_HhxGzDLJk4_nRABS_LUhxK9iyIeFnWzqK29-Yec/export?format=xlsx';
 let isTvMode = false;
 (function(){
   const params = new URLSearchParams(location.search);
